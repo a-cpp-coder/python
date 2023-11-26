@@ -24,8 +24,8 @@ print(list_2)
 list_3 = []
 for i in range(0, 10 + 1):
     list_3.append(i ** 2)
-
 print(list_3)
+
 
 # List of Prime Numbers
 list_4 = []
@@ -38,6 +38,11 @@ for i in range(2, n + 1):
         list_4.append(i)
 
 print(list_4)
-x = 16
+x = 12
 print(list_4[x - 1])
         
+
+## There is a more concise way to make a list that satisfy a condition => List Comprehension
+# Squares
+list_5 = [x ** 2 for x in range(0, 10 + 1)] # not just more concise but it is also more readable
+print(list_5)
